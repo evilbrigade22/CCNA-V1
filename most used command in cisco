@@ -1,0 +1,61 @@
+Switch
+SVI
+DHCP
+VC, VT
+SMAC
+
+CUCM
+Analog Phone
+Voip Phone
+ 
+
+
+show tech-support
+enter	- show per line of config
+space	- show many lines of config
+q	- quit config
+
+en	- Cubao mode : All Show, No touch
+sr 	- show run
+ss 	- show start
+crs 	- copy run start
+siib	- shot ip int brief
+svb 	- show vlan brief
+scn	- show cdp neighbor
+sir	- show ip route
+
+
+
+
+config t- Pasig mode : All Touch,
+hostname
+enable secret pass
+no logging console
+
+
+int fa0/0 - (config-if)
+router bgp 1000 - (config-router)
+
+
+first five
+hostname COREtaas-_
+enable secret pass
+service password-encryption
+no logging console
+no ip domain-lookup
+
+Protect the console
+line console 0
+     password pass
+     login
+     exec-timeout 0 0
+
+Protect work from home
+line vty 0 14
+      password pass
+      login
+      exec-timeout 0 0
+
+
+
+
